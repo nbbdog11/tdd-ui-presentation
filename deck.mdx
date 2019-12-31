@@ -45,8 +45,112 @@ export const themes = [customTheme, nightOwl];
 ## Good code design is good code design
 * Reusability
 * Readability
+
 ---
-# What Not to Do
+# Tips 💰
+___
+## Writing Less Brittle Tests
+---
+
+<CodeSurfer>
+
+```jsx file="./examples/elements-vs-structure/ConfirmationModal.js"
+```
+
+```jsx 10 file="./examples/elements-vs-structure/ConfirmationModal.js"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+  <Step>
+
+```jsx title="Relying on Elements" file="./examples/elements-vs-structure/test/Elements.test.js"
+```
+
+```jsx title="Relying on Structure" file="./examples/elements-vs-structure/test/Structure.test.js"
+```
+
+  </Step>
+
+  <Step>
+
+```jsx 18:21 title="Relying on Elements" file="./examples/elements-vs-structure/test/Elements.test.js"
+```
+
+```jsx 18:23 title="Relying on Structure" file="./examples/elements-vs-structure/test/Structure.test.js"
+```
+
+  </Step>
+
+</CodeSurferColumns>
+
+---
+## Test Ids 😬
+---
+## Test Ids 😄
+---
+
+<CodeSurferColumns>
+
+  <Step>
+
+```jsx 10:12 title="Component" file="./examples/elements-vs-structure/ConfirmationModalTestId.js"
+```
+
+```jsx 21 title="Test" file="./examples/elements-vs-structure/test/TestId.test.js"
+```
+
+  </Step>
+
+</CodeSurferColumns>
+
+---
+# New Requirement
+---
+## Flex 💪
+---
+
+<CodeSurfer>
+
+```jsx title="Original" file="./examples/elements-vs-structure/ConfirmationModalTestId.js"
+```
+
+```jsx title="New" file="./examples/elements-vs-structure/with-flex/ConfirmationModalTestId.js"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```jsx 18:21 title="Relying on Elements ✅" file="./examples/elements-vs-structure/test/Elements.test.js"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```jsx 18:21 title="Relying on Test Id ✅" file="./examples/elements-vs-structure/test/TestId.test.js"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```jsx 18:23 title="Relying on Structure ❌" file="./examples/elements-vs-structure/test/Structure.test.js"
+```
+
+</CodeSurfer>
+
 ---
 # Tooling (React)
 ---

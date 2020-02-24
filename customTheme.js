@@ -1,5 +1,8 @@
 const customTheme = {
   styles: {
+    ol: {
+      lineHeight: "1.2em",
+    },
     ul: {
       lineHeight: "1.2em",
     },

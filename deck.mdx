@@ -29,8 +29,7 @@ export const themes = [customTheme, nightOwl];
   <li>Why folks don't</li>
   <li>Why you should</li>
   <li>What you should and shouldn't do</li>
-  <li>How to do it effectively</li>
-  <li>Live coding ❓❗❓</li>
+  <li>Tips to reduce brittleness</li>
 </Appear>
 </ul>
 
@@ -38,7 +37,7 @@ export const themes = [customTheme, nightOwl];
 
 <Headshot />
 
-## Scott Wagner
+### Scott Wagner
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <Appear>
@@ -74,9 +73,11 @@ export const themes = [customTheme, nightOwl];
 ---
 
 ## Write the code
-<Appear>
-<h4>Just enough to make the test pass</h4>
-</Appear>
+<Notes>
+  <ul>
+    <li>Just enough to make the test pass</li>
+  </ul>
+</Notes>
 
 ---
 ## Refactor (Optional)
@@ -87,11 +88,19 @@ export const themes = [customTheme, nightOwl];
 <RedGreenRefactor />
 
 ---
-# Why Folks Don't Test UIs
+# Why Folks Don't TDD UIs
+<Notes>
+  <ul>
+    <li>UI testing handled by QA team</li>
+    <li>UI considered to be less critical</li>
+    <li>Tests slow us down</li>
+  </ul>
+</Notes>
+
 ---
 # Why TDD Your UI?
 ---
-# Frontend code is code too!
+## Frontend code is code too!
 ---
 ## It has business logic
 * Form submission validations
@@ -115,10 +124,48 @@ export const themes = [customTheme, nightOwl];
 * Readability
 
 ---
-# Tips 💰
+## Other TDD benefits still apply
+<ul>
+  <Appear>
+    <li>Focused work</li>
+    <li>Tests as documentation</li>
+    <li>Watching tests fail</li>
+    <li>Safe refactoring</li>
+  </Appear>
+</ul>
+
+___
+# Do's and Don'ts
+---
+## Do's
+<ul>
+  <Appear>
+    <li>Inject dependencies when possible</li>
+    <li>Use descriptive names</li>
+    <li>Practice, Practice, Practice</li>
+  </Appear>
+</ul>
+
+---
+## Don'ts
+<ul>
+  <Appear>
+    <li>Snapshot Testing</li>
+    <li>Testing Simple Styles (CSS)</li>
+    <li>Test via the UI (if avoidable)</li>
+  </Appear>
+</ul>
+
 ___
 ## Writing Less Brittle Tests
 ---
+### Don't reach into components
+---
+### Don't rely on global state
+---
+### Decouple test from component implementation
+#### Examples:
+___
 
 <CodeSurfer>
 
@@ -220,4 +267,3 @@ ___
 </CodeSurfer>
 
 ---
-# Live Coding 🤞

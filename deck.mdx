@@ -6,6 +6,7 @@ import {
 import { nightOwl } from "@code-surfer/themes";
 import Headshot from './components/Headshot.js';
 import RedGreenRefactor from './components/RedGreenRefactor.js';
+import Agenda, { SteppedAgenda } from './components/Agenda';
 import customTheme from './customTheme.js';
 import './styles.css';
 
@@ -62,16 +63,7 @@ export const themes = [customTheme, nightOwl];
 ---
 # Agenda
 
-<ul>
-<Appear>
-  <li>Intro to me</li>
-  <li>What is TDD</li>
-  <li>Why folks don't</li>
-  <li>Why you should</li>
-  <li>What you should and shouldn't do</li>
-  <li>Tips to reduce brittleness</li>
-</Appear>
-</ul>
+<SteppedAgenda doneSteps={[0]}/>
 
 ---
 # TDD Overview
@@ -105,6 +97,11 @@ export const themes = [customTheme, nightOwl];
 <RedGreenRefactor />
 
 ---
+# Agenda
+
+<Agenda currentStep={2}/>
+
+---
 # Why Folks Don't TDD UIs
 <Notes>
   <ul>
@@ -113,6 +110,11 @@ export const themes = [customTheme, nightOwl];
     <li>Tests slow us down</li>
   </ul>
 </Notes>
+
+---
+# Agenda
+
+<Agenda currentStep={3}/>
 
 ---
 # Why TDD Your UI?
@@ -151,6 +153,11 @@ export const themes = [customTheme, nightOwl];
   </Appear>
 </ul>
 
+---
+# Agenda
+
+<Agenda currentStep={4}/>
+
 ___
 # Do's and Don'ts
 ---
@@ -172,6 +179,11 @@ ___
     <li>Test via the UI (if avoidable)</li>
   </Appear>
 </ul>
+
+---
+# Agenda
+
+<Agenda currentStep={5}/>
 
 ___
 ## Writing Less Brittle Tests
@@ -282,5 +294,10 @@ ___
 ```
 
 </CodeSurfer>
+
+---
+# Agenda
+
+<Agenda currentStep={6}/>
 
 ---

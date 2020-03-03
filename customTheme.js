@@ -7,6 +7,10 @@ const customTheme = {
       lineHeight: "1.2em",
     },
   },
+  colors: {
+    text: "white",
+    background: "#1B2A54",
+  },
   fonts: {
     heading: "Open Sans",
     body: "Roboto",

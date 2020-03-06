@@ -1,5 +1,5 @@
 import React from "react";
-import bitmoji from "./bitmoji.png";
+import bitmoji from "../static/bitmoji.png";
 
 const Layout = ({ children }) => {
   return (

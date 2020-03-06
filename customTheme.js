@@ -1,5 +1,20 @@
+import { nightOwl } from "@code-surfer/themes";
+
 const customTheme = {
   styles: {
+    CodeSurfer: {
+      ...nightOwl.styles.CodeSurfer,
+      pre: {
+        backgroundColor: "background",
+      },
+      code: {
+        backgroundColor: "background",
+      },
+      title: {
+        backgroundColor: "background",
+        color: "text",
+      },
+    },
     ol: {
       lineHeight: "1.2em",
     },

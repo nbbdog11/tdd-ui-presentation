@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This talk is about TDD (Test-Driven Development) and how to apply it to UI development. It goes into what TDD is and the benefits to the development process and product. We'll talk through some of the reasons why developers (even those who already use TDD to write backend code) are reluctant to test-drive their frontends, and provide some tips on how to effectively test-drive frontend code. Finally, we'll walk through test-driving a practical, real-world feature.
+In this talk, we'll discuss TDD (Test-Driven Development) and how to apply it to UI development. We'll briefly cover what TDD is and the benefits to the development process and product. We'll talk through some of the reasons why developers (even those who already use TDD to write backend code) are reluctant to test-drive their frontends, and provide some tips on how to effectively test-drive frontend code. Finally, we'll walk through test-driving a practical, real-world feature.
 
 ### Tooling
 

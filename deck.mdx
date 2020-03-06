@@ -4,6 +4,7 @@ import {
   Step,
 } from "code-surfer";
 import { nightOwl } from "@code-surfer/themes";
+import Layout from './components/Layout.js';
 import Headshot from './components/Headshot.js';
 import RedGreenRefactor from './components/RedGreenRefactor.js';
 import Agenda, { SteppedAgenda } from './components/Agenda';
@@ -44,13 +45,23 @@ export const themes = [nightOwl, customTheme];
 </div>
 
 ---
+<Layout>
+
 # Assumptions
 
+</Layout>
+
 ---
+<Layout>
+
 # Assumption
 * You know what a UI is
 
+</Layout>
+
 ---
+<Layout>
+
 # Goals
 <ul>
 <Appear>
@@ -60,14 +71,27 @@ export const themes = [nightOwl, customTheme];
 </Appear>
 </ul>
 
+</Layout>
+
 ---
+<Layout>
+
 # Agenda
 
 <SteppedAgenda doneSteps={[0]}/>
 
+</Layout>
+
 ---
+<Layout>
+
 # TDD Overview
+
+</Layout>
+
 ---
+<Layout>
+
 ## Decide what test to write
 
 <Notes>
@@ -77,9 +101,17 @@ export const themes = [nightOwl, customTheme];
   </ul>
 </Notes>
 
+</Layout>
+
 ---
+<Layout>
+
 ## Write the test
+
+</Layout>
+
 ---
+<Layout>
 
 ## Write the code
 <Notes>
@@ -88,20 +120,39 @@ export const themes = [nightOwl, customTheme];
   </ul>
 </Notes>
 
+</Layout>
+
 ---
+<Layout>
+
 ## Refactor (Optional)
+
+</Layout>
+
 ---
+<Layout>
+
 ## Rinse and repeat til the feature's done
----
 
+</Layout>
+
+---
+<Layout>
 <RedGreenRefactor />
+</Layout>
 
 ---
+<Layout>
+
 # Agenda
 
 <Agenda currentStep={2}/>
 
+</Layout>
+
 ---
+<Layout>
+
 # Why Folks Don't TDD UIs
 <Notes>
   <ul>
@@ -110,21 +161,40 @@ export const themes = [nightOwl, customTheme];
     <li>Tests slow us down</li>
   </ul>
 </Notes>
+</Layout>
 
 ---
+<Layout>
+
 # Agenda
 
 <Agenda currentStep={3}/>
+</Layout>
 
 ---
+<Layout>
+
 # Why TDD Your UI?
+
+</Layout>
+
 ---
+<Layout>
+
 ## Frontend code is code too!
+
+</Layout>
+
 ---
+<Layout>
+
 ## It has business logic
 * Form submission validations
 * *Conditional Rendering*
 * Data formatting
+
+</Layout>
+
 ---
 
 <CodeSurfer>
@@ -138,11 +208,18 @@ export const themes = [nightOwl, customTheme];
 </CodeSurfer>
 
 ---
+
+<Layout>
+
 ## Good code design is good code design
 * Reusability
 * Readability
 
+</Layout>
+
 ---
+<Layout>
+
 ## Other TDD benefits still apply
 <ul>
   <Appear>
@@ -153,14 +230,27 @@ export const themes = [nightOwl, customTheme];
   </Appear>
 </ul>
 
+</Layout>
+
 ---
+<Layout>
+
 # Agenda
 
 <Agenda currentStep={4}/>
 
+</Layout>
+
 ___
+<Layout>
+
 # Do's and Don'ts
+
+</Layout>
+
 ---
+<Layout>
+
 ## Do's
 <ul>
   <Appear>
@@ -170,7 +260,11 @@ ___
   </Appear>
 </ul>
 
+</Layout>
+
 ---
+<Layout>
+
 ## Don'ts
 <ul>
   <Appear>
@@ -180,20 +274,46 @@ ___
   </Appear>
 </ul>
 
+</Layout>
+
 ---
+<Layout>
+
 # Agenda
 
 <Agenda currentStep={5}/>
 
+</Layout>
+
 ___
+<Layout>
+
 ## Writing Less Brittle Tests
+
+</Layout>
+
 ---
+<Layout>
+
 ### Don't reach into components
+
+</Layout>
+
 ---
+<Layout>
+
 ### Don't rely on global state
+
+</Layout>
+
 ---
+<Layout>
+
 ### Decouple test from component implementation
 #### Examples:
+
+</Layout>
+
 ___
 
 <CodeSurfer>
@@ -233,9 +353,19 @@ ___
 </CodeSurferColumns>
 
 ---
+<Layout>
+
 ## Test Ids 😬
+
+</Layout>
+
 ---
+<Layout>
+
 ## Test Ids 😄
+
+</Layout>
+
 ---
 
 <CodeSurferColumns>
@@ -253,9 +383,19 @@ ___
 </CodeSurferColumns>
 
 ---
+<Layout>
+
 # New Requirement
+
+</Layout>
+
 ---
+<Layout>
+
 ## Flex 💪
+
+</Layout>
+
 ---
 
 <CodeSurfer>
@@ -296,8 +436,12 @@ ___
 </CodeSurfer>
 
 ---
+<Layout>
+
 # Agenda
 
 <Agenda currentStep={6}/>
+
+</Layout>
 
 ---

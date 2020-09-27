@@ -3,31 +3,36 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import Layout from './components/Layout.js';
-import Headshot from './components/Headshot.js';
-import RedGreenRefactor from './components/RedGreenRefactor.js';
-import Agenda, { SteppedAgenda } from './components/Agenda';
-import customTheme from './customTheme.js';
-import './styles.css';
+import Layout from "./components/Layout.js";
+import Headshot from "./components/Headshot.js";
+import RedGreenRefactor from "./components/RedGreenRefactor.js";
+import Agenda, { SteppedAgenda } from "./components/Agenda";
+import customTheme from "./customTheme.js";
+import "./styles.css";
 
 export const theme = customTheme;
 
-
 <Layout>
+
 
 # TDD and U
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 # TDD and UIs
+
 <Appear>
   <h2>What, Why, and How</h2>
 </Appear>
 
 </Layout>
+
 
 ---
 
@@ -35,70 +40,87 @@ export const theme = customTheme;
 
 ### Scott Wagner
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
   <Appear>
-  <div>
-    Full-Stack Developer (6+ years)
-  </div>
-  <div>
-    Strong preference for frontend dev
-  </div>
-  <div>
-    JOOR
-  </div>
-  <div>
-    ⚾ 🥁 🏌️‍♂️
-  </div>
+    <div>Full-Stack Developer (6+ years)</div>
+    <div>Strong preference for frontend dev</div>
+    <div>JOOR</div>
+    <div>⚾ 🥁 🏌️‍♂️</div>
   </Appear>
 </div>
 
 ---
+
 <Layout>
+
 
 # Assumptions
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 # Assumption
-* You know what a UI is
+
+- You know what a UI is
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 # Goals
+
 <ul>
-<Appear>
-  <li>Teach you a little about TDD</li>
-  <li>Convince you to try it</li>
-  <li>Give you some tools to be successful</li>
-</Appear>
+  <Appear>
+    <li>Teach you a little about TDD</li>
+    <li>Convince you to try it</li>
+    <li>Give you some tools to be successful</li>
+  </Appear>
 </ul>
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # Agenda
 
-<SteppedAgenda doneSteps={[0]}/>
+<SteppedAgenda doneSteps={[0]} />
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # TDD Overview
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Decide what test to write
 
@@ -111,57 +133,82 @@ export const theme = customTheme;
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Write the test
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ## Write the code
+
 <Notes>
   <ul>
     <li>Just enough to make the test pass</li>
+    <li>Test serves as spec of system behavior</li>
+    <li>
+      Any extra code is untested and unspecified behavior
+    </li>
   </ul>
 </Notes>
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Refactor (Optional)
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Rinse and repeat til the feature's done
 
 </Layout>
 
+
 ---
+
 <Layout>
-<RedGreenRefactor />
+  <RedGreenRefactor />
 </Layout>
 
 ---
+
 <Layout>
+
 
 # Agenda
 
-<Agenda currentStep={2}/>
+<Agenda currentStep={2} />
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 # Why Folks Don't TDD UIs
+
 <Notes>
   <ul>
     <li>UI testing handled by QA team</li>
@@ -171,64 +218,88 @@ export const theme = customTheme;
 </Notes>
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # Agenda
 
 <Agenda currentStep={3}/>
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # Why TDD Your UI?
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Frontend code is code too!
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ## It has business logic
-* Form submission validations
-* *Conditional Rendering*
-* Data formatting
+
+- Form submission validations
+- _Conditional Rendering_
+- Data formatting
 
 </Layout>
+
 
 ---
 
 <CodeSurfer>
 
+
 ```jsx title="Conditional Rendering" file="./examples/UserProfile.js"
+
 ```
 
 ```jsx 5:12 title="Conditional Rendering" file="./examples/UserProfile.js"
+
 ```
 
 </CodeSurfer>
 
+
 ---
 
 <Layout>
 
+
 ## Good code design is good code design
-* Reusability
-* Readability
+
+- Reusability
+- Readability
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ## Other TDD benefits still apply
+
 <ul>
   <Appear>
     <li>Focused work</li>
@@ -240,26 +311,36 @@ export const theme = customTheme;
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # Agenda
 
-<Agenda currentStep={4}/>
+<Agenda currentStep={4} />
 
 </Layout>
 
-___
+
+---
+
 <Layout>
+
 
 # Do's and Don'ts
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ## Do's
+
 <ul>
   <Appear>
     <li>Inject dependencies when possible</li>
@@ -268,12 +349,20 @@ ___
   </Appear>
 </ul>
 
+<Notes>
+  <li>dependency injection - mock a login handler</li>
+</Notes>
+
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ## Don'ts
+
 <ul>
   <Appear>
     <li>Snapshot Testing</li>
@@ -284,172 +373,249 @@ ___
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 # Agenda
 
-<Agenda currentStep={5}/>
+<Agenda currentStep={5} />
 
 </Layout>
 
-___
+
+---
+
 <Layout>
+
 
 ## Writing Less Brittle Tests
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ### Don't reach into components
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ### Don't rely on global state
 
 </Layout>
 
+
 ---
+
 <Layout>
 
+
 ### Decouple test from component implementation
+
 #### Examples:
 
 </Layout>
 
-___
+
+---
 
 <CodeSurfer>
 
+
 ```jsx file="./examples/elements-vs-structure/ConfirmationModal.js"
+
 ```
 
 ```jsx 10 file="./examples/elements-vs-structure/ConfirmationModal.js"
+
 ```
 
 </CodeSurfer>
+
 
 ---
 
 <CodeSurferColumns>
 
+
   <Step>
 
+
 ```jsx title="Relying on Elements" file="./examples/elements-vs-structure/test/Elements.test.js"
+
 ```
 
 ```jsx title="Relying on Structure" file="./examples/elements-vs-structure/test/Structure.test.js"
+
 ```
 
   </Step>
+
 
   <Step>
 
+
 ```jsx 18:21 title="Relying on Elements" file="./examples/elements-vs-structure/test/Elements.test.js"
+
 ```
 
 ```jsx 18:23 title="Relying on Structure" file="./examples/elements-vs-structure/test/Structure.test.js"
+
 ```
 
   </Step>
 
+
 </CodeSurferColumns>
 
+
 ---
+
 <Layout>
+
 
 ## Test Ids 😬
 
 </Layout>
 
+
 ---
+
 <Layout>
+
 
 ## Test Ids 😄
 
 </Layout>
 
+
 ---
 
 <CodeSurferColumns>
 
+
   <Step>
 
+
 ```jsx 10:12 title="Component" file="./examples/elements-vs-structure/ConfirmationModalTestId.js"
+
 ```
 
 ```jsx 21 title="Test" file="./examples/elements-vs-structure/test/TestId.test.js"
+
 ```
 
   </Step>
 
+
 </CodeSurferColumns>
 
+
 ---
+
 <Layout>
+
 
 # New Requirement
 
 </Layout>
 
+
 ---
+
+<CodeSurfer>
+
+
+```jsx file="./examples/elements-vs-structure/ConfirmationModal.js"
+
+```
+
+</CodeSurfer>
+
+
+---
+
 <Layout>
+
 
 ## Flex 💪
 
 </Layout>
 
+
 ---
 
 <CodeSurfer>
 
+
 ```jsx title="Original" file="./examples/elements-vs-structure/ConfirmationModalTestId.js"
+
 ```
 
 ```jsx title="New" file="./examples/elements-vs-structure/with-flex/ConfirmationModalTestId.js"
+
 ```
 
 </CodeSurfer>
 
+
 ---
 
 <CodeSurfer>
+
 
 ```jsx 18:21 title="Relying on Elements ✅" file="./examples/elements-vs-structure/test/Elements.test.js"
+
 ```
 
 </CodeSurfer>
 
+
 ---
 
 <CodeSurfer>
+
 
 ```jsx 18:21 title="Relying on Test Id ✅" file="./examples/elements-vs-structure/test/TestId.test.js"
+
 ```
 
 </CodeSurfer>
+
 
 ---
 
 <CodeSurfer>
 
+
 ```jsx 18:23 title="Relying on Structure ❌" file="./examples/elements-vs-structure/test/Structure.test.js"
+
 ```
 
 </CodeSurfer>
 
+
 ---
+
 <Layout>
+
 
 # Agenda
 
-<Agenda currentStep={6}/>
+<Agenda currentStep={6} />
 
 </Layout>
+
 
 ---

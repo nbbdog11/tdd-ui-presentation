@@ -3,6 +3,6 @@ export default [
   "What is TDD",
   "Why folks don't",
   "Why you should",
-  "What you should and shouldn't do",
+  "What tests you should and shouldn't write",
   "Tips to reduce brittleness",
 ];
